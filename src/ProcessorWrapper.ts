@@ -97,7 +97,7 @@ export default class ProcessorWrapper<TransformerOptions extends Record<string, 
 
   async restartTransformer(...options: Parameters<(typeof this.transformer)['restart']>) {
     // @ts-ignore unclear why the restart method only accepts VideoTransformerInitOptions instead of either those or AudioTransformerInitOptions
-    this.transformer.restart(options[0]);
+    // this.transformer.restart(options[0]);
   }
 
   async updateTransformerOptions(...options: Parameters<(typeof this.transformer)['update']>) {
